@@ -32,8 +32,8 @@ SECRET_KEY = env.str('SECRET_KEY', default=get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'archirugby.fly.dev']
-CSRF_TRUSTED_ORIGINS = ['https://archirugby.fly.dev']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'rugby.fly.dev']
+CSRF_TRUSTED_ORIGINS = ['https://rugby.fly.dev']
 
 # Application definition
 
@@ -86,8 +86,12 @@ WSGI_APPLICATION = 'rugby.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env.str("DB_NAME"),
+        'USER': env.str("DB_USER"),
+        'PASSWORD': env.str("DB_PASSWORD"),
+        'HOST': env.str("DB_HOST"),
+        'PORT': env.str("DB_PORT")
     }
 }
 
