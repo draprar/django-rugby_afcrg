@@ -1,13 +1,13 @@
 # Django-rugby Web App
 
 This project is a web app developed for learning purposes, which is basically rewritten from an old website written in HTML and CSS into a web-app using the Django framework and python programming.
-Check it: https://archirugby.fly.dev/
+Check it: https://rugby.fly.dev/
 
 ## Technologies
 
 - Python 3.10 as the programming language
 - Django 4.1.3 as the web framework
-- SQLite as the database
+- PostgreSQL 16.1 as the database
 - HTML, CSS, and JavaScript as the web languages
 - Bootstrap 5 as the front-end framework
 
