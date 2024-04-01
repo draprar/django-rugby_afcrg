@@ -1,6 +1,7 @@
 # Django-rugby Web App
 
 This project is a web app developed for learning purposes, which is basically rewritten from an old website written in HTML and CSS into a web-app using the Django framework and python programming.
+Check it: https://archirugby.fly.dev/
 
 ## Technologies
 
