@@ -13,14 +13,15 @@ Check it: https://rugby.fly.dev/
 
 ## Installation
 
-To install this project, follow these steps:
+If you really want to install this project - write to me first to get the static files that I have not added here :) then follow these steps:
 
 1. Clone this repository to your local machine.
 2. Create and activate a virtual environment using pipenv or virtualenv.
 3. Install the required packages using `pip install -r requirements.txt`.
-4. Run `python manage.py migrate` to create the database tables.
-5. Run `python manage.py runserver` to start the development server.
+4. Create your own .env file to hold secrets (SECRET_KEY, DEBUG state and DB) or edit settings.py file.
+5. Run `python manage.py migrate` to create the database tables.
+6. Run `python manage.py runserver` to start the development server.
 
 ## Usage
 
-To use this project, open your browser and go to `http://127.0.0.1:8000/`. You should see the home page of the web app, which displays an archive of a rugby team from Giżycko, Poland.
+To use this project, open your browser and go to `http://127.0.0.1:8000/`. You should see the home page of the web app, which displays an archive page of a rugby team from Giżycko, Poland.
