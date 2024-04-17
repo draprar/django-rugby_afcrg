@@ -21,11 +21,18 @@ body {
 
     text-align: center;
     font-size: 5em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("../assets/img/header-bg.jpg");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.5)), url("../assets/img/header.jpg");
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.5)), url("../assets/img/header_mob.jpg");
+        background-attachment: scroll;
+    }
 }
 .btn {
     margin-top: 2rem !important;
