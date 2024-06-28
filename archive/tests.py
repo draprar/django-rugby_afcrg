@@ -10,8 +10,8 @@ driver.get(url='http://127.0.0.1:8000/admin/')
 
 
 def element_is_clickable():
-    driver.find_element(By.XPATH, '//*[@id="id_username"]').send_keys("waleron")
-    driver.find_element(By.XPATH, '//*[@id="id_password"]').send_keys("chujciwdupe1")
+    driver.find_element(By.XPATH, '//*[@id="id_username"]').send_keys("*")
+    driver.find_element(By.XPATH, '//*[@id="id_password"]').send_keys("*")
     time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="login-form"]/div[3]/input').click()
     time.sleep(2)
