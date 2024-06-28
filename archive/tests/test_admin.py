@@ -42,6 +42,18 @@ class AddDeleteUser(unittest.TestCase):
         )
         self.assertTrue(self.driver.find_element(By.LINK_TEXT, "testuser"))
 
+    def test_modify_user(self):
+        self.test_login()
+
+        self.driver.find_element(By.LINK_TEXT, "Użytkownicy").click()
+        self.driver.find_element(By.LINK_TEXT, "testuser").click()
+
+        self.driver.find_element(By.CSS_SELECTOR, "input[name='first_name']").send_keys("testname")
+        self.driver.find_element(By.CSS_SELECTOR, "input[name='last_name']").send_keys("testlastname")
+        self.driver.find_element(By.CSS_SELECTOR, "input[name='email']").send_keys("testemail")
+
+        self.driver.find_element(By.CSS_SELECTOR, "input[value='Zapisz']").click()
+
     def test_delete_user(self):
         self.test_login()
 
@@ -103,6 +115,14 @@ class AddDeleteGroup(unittest.TestCase):
             EC.visibility_of_element_located((By.LINK_TEXT, "testgroup"))
         )
         self.assertTrue(self.driver.find_element(By.LINK_TEXT, "testgroup"))
+
+    def test_modify_group(self):
+        self.test_login()
+
+        self.driver.find_element(By.LINK_TEXT, "Grupy").click()
+        self.driver.find_element(By.LINK_TEXT, "testgroup").click()
+
+        self.driver.find_element(By.CSS_SELECTOR, "input[value='Zapisz']").click()
 
     def test_delete_group(self):
         self.test_login()
