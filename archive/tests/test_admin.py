@@ -87,8 +87,8 @@ class AddDeleteGroup(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.admin_url = "http://127.0.0.1:8000/admin/"
-        self.username = "prt"
-        self.password = "1"
+        self.username = "*"
+        self.password = "*"
 
     def test_login(self):
         self.driver.get(self.admin_url)
