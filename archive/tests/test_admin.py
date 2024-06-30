@@ -1,3 +1,4 @@
+import os
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -10,7 +11,7 @@ class AddDeleteUser(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
-        self.admin_url = "http://127.0.0.1:8000/admin/"
+        self.admin_url = "https://rugby.fly.dev/admin/"
         self.username = "*"
         self.password = "*"
 
@@ -86,7 +87,7 @@ class AddDeleteGroup(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
-        self.admin_url = "http://127.0.0.1:8000/admin/"
+        self.admin_url = "https://rugby.fly.dev/admin/"
         self.username = "*"
         self.password = "*"
 
@@ -140,3 +141,15 @@ class AddDeleteGroup(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+
+
+if __name__ == "__main__":
+    test_dir = os.path.join(os.getcwd(), 'tests_outcomes')
+    os.makedirs(test_dir, exist_ok=True)
+    test_outcome_file = os.path.join(test_dir, 'test_admin_outcome.txt')
+
+    with open(test_outcome_file, 'w') as f:
+        runner = unittest.TextTestRunner(stream=f, verbosity=2)
+        result = unittest.main(testRunner=runner, exit=False)
+
+    print(f"Test results written to {test_outcome_file}")
