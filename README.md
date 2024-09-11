@@ -1,6 +1,6 @@
 # AFC Rugby Giżycko Archive - Website
 
-![Project Demo](static/assets/demo.gif)
+![Project Demo](archive/static/assets/demo.gif)
 
 This project is a web app developed for learning purposes, which is basically rewritten from an old website written in HTML and CSS into a web-app using the Django framework and python programming.
 Check it: https://afcrg.pythonanywhere.com/
