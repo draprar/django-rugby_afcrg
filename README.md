@@ -1,9 +1,8 @@
-# AFC Rugby Giżycko Archive - Website
+# AFC Rugby Giżycko Archive
 
 ![Project Demo](archive/static/assets/demo.gif)
 
-This project is a web app developed for learning purposes, which is basically rewritten from an old website written in HTML and CSS into a web-app using the Django framework and python programming.
-Check it: https://afcrg.pythonanywhere.com/
+Once upon a time this was a plain HTML/CSS site. Now it’s reborn as a Django web app — because learning by rebuilding old stuff is fun.
 
 ## Technology Stack
 
@@ -15,14 +14,14 @@ Check it: https://afcrg.pythonanywhere.com/
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/draprar/django-rugby.git
-   cd django-rugby
+   git clone https://github.com/draprar/django-rugby_afcrg.git
+   cd django-rugby_afcrg
    ```
 
 2. Create and activate a virtual environment
    ```bash
-   virtualenv venv
-   source venv/bin/activate
+   python -m venv venv
+   source venv/bin/activate   # Windows: venv\Scripts\activate
    ```
 
 3. Install the required packages
@@ -30,7 +29,7 @@ Check it: https://afcrg.pythonanywhere.com/
    pip install -r requirements.txt
    ```
    
-4. Create your own .env file to hold secrets or edit settings.py file
+4. (optional) Create your own .env file to hold secrets or edit settings.py file
    ```bash
    touch .env
    ```
@@ -53,4 +52,4 @@ Check it: https://afcrg.pythonanywhere.com/
 
 ## **Credits**
 
-- **Developer**: Walery ([@draprar](https://github.com/draprar/))
+- **Built by**: Walery ([@draprar](https://github.com/draprar/))
