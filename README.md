@@ -1,16 +1,16 @@
-# AFC Rugby Giżycko Archive
+# 🏉 AFC Rugby Giżycko Archive
 
 ![Project Demo](archive/static/assets/demo.gif)
 
 Once upon a time this was a plain HTML/CSS site. Now it’s reborn as a Django web app — because learning by rebuilding old stuff is fun.
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **Backend**: Python 3.10, Django
 - **Database**: MySQL
 - **Frontend**: HTML, CSS, Bootstrap, JavaScript
 
-## Installation
+## 🚀 Installation
 
 1. Clone the repository to your local machine:
    ```bash
@@ -50,6 +50,6 @@ Once upon a time this was a plain HTML/CSS site. Now it’s reborn as a Django w
    python manage.py runserver
    ```
 
-## **Credits**
+## 👤 **Credits**
 
 - **Built by**: Walery ([@draprar](https://github.com/draprar/))
